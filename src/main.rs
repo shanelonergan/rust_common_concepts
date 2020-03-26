@@ -40,4 +40,11 @@ fn main() {
     let remainder = 43 % 5;
 
     // BOOLEANS
+    let t = true;
+    let f: bool = false; // with explicit type annotation
+
+    // CHARACTERS
+    let c = 'z';
+    let z = 'ℤ';
+    let heart_eyed_cat = '😻';
 }
