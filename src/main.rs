@@ -72,4 +72,28 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let first = a[0];
     let second = a[1];
+
+    // FUNCTIONS
+    another_function(5, 6); // hoisted from outside the main function
+
+    let x = five();
+    println!("The value of x is: {}", x);
+
+    let x = plus_one(5);
+    println!("The value of x is: {}", x);
 }
+
+fn another_function(x: i32, y: i32) {
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+}
+
+fn five() -> i32 {
+    5 // implicit return because this is an expression
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1 // placing a semicolon here would return an error because it becomes a statement
+    // return x + 1; would work
+}
+
