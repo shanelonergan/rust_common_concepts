@@ -47,4 +47,16 @@ fn main() {
     let c = 'z';
     let z = 'ℤ';
     let heart_eyed_cat = '😻';
+
+    // TUPLES
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup; // destructuring
+    println!("The value of y is: {}", y);
+
+    access individual values
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = x.0;
+    let six_point_four = x.1;
+    let one = x.2;
 }
